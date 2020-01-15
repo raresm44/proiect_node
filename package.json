@@ -1,0 +1,27 @@
+{
+  "name": "node3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test & mocha --timeout 10000",
+    "start": "NODE_ENV=development & nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "cross-env": "^6.0.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^7.0.0",
+    "node-pre-gyp": "^0.14.0",
+    "sequelize": "^5.21.3",
+    "sequelize-cli": "^5.5.1",
+    "sqlite": "^3.0.3",
+    "sqlite3": "^4.1.1"
+  }
+}

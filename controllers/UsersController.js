@@ -27,8 +27,8 @@ const UsersController = {
       .User
       .create({
         email: body.email,
-        firstName: body.firstName,
-        lastName: body.lastName,
+        first_name: body.first_name,
+        last_name: body.last_name,
         password: body.password,
       })
       .then(user => {

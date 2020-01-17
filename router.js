@@ -7,13 +7,13 @@ const router = express.Router();
 
 router.use("/users", authentificationMiddleware);
 
-router.get("/users",authentificationMiddleware);
+// router.get("/users",authentificationMiddleware);
 
-router.get("/users",userController.index);
-router.post("/users",userController.create);
-router.get("/users/:id",userController.show);
-router.put("/user/:id",userController.update);
-router.delete("user/:id",userController.delete);
+router.get("/users", userController.index);
+router.post("/users", userController.create);
+router.get("/users/:id", userController.show);
+router.put("/users/:id", userController.update);
+router.delete("/users/:id", userController.delete);
 
 router.post('/login', authentificationController.login);
 

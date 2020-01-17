@@ -12,7 +12,7 @@ module.exports = function(req,res,next){
             error: messages.unauthorized,            
         });
     }else{
-    const tokenToVerify = req.headers.authorization.replace('Bearer','');
+    const tokenToVerify = req.headers.authorization.replace('Bearer ','');
     jwt.verify(tokenToVerify, config.JWTSECRET, (err,data) =>{
         if(err){
             res.status(401).send({
